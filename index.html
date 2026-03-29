@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Ayush Verma — Developer & Data Analyst</title>
+  <meta name="description"
+    content="Ayush Verma — Developer & Aspiring Data Analyst. Python, Web Development, Data Analytics, AI Certified." />
+  <meta name="keywords" content="Ayush Verma, Portfolio, Developer, Data Analyst, Python, Web Development" />
+  <meta name="author" content="Ayush Verma" />
+  <meta property="og:title" content="Ayush Verma — Developer & Data Analyst" />
+  <meta property="og:description" content="Developer building real tools with Python, Web Dev & Data Analytics." />
+  <meta property="og:url" content="https://magnificent-florentine-9a3a7a.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#000000" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #three-canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .aurora, .star-grid { display: none; }
+  </style>
+</head>
+
+<body>
+  <!-- THREE.JS BACKGROUND -->
+  <canvas id="three-canvas"></canvas>
+
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+  <div id="cur-trail"></div>
+
+
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">AYUSH.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="aurora">
+      <div class="aurora-blob ab1"></div>
+      <div class="aurora-blob ab2"></div>
+      <div class="aurora-blob ab3"></div>
+    </div>
+    <div class="star-grid"></div>
+
+    <div class="hero-left">
+      <div class="hero-tag"><span class="tag-pulse"></span>Open to Internships &amp; Projects</div>
+      <div class="hero-name">
+        <span class="l1">AYUSH</span>
+        <span class="l2">VERMA</span>
+      </div>
+      <div class="hero-role-row">
+        <div class="role-line"></div>
+        <span class="hero-role">Developer & Data Analyst</span>
+      </div>
+      <p class="hero-desc">
+        Passionate <strong>Computer Science student</strong> with hands-on experience in <strong>Python
+          programming</strong>, data analytics, and AI prompt engineering. I build automation tools and solve problems
+        through clean, purposeful code.
+      </p>
+      <div class="hero-btns">
+        <a class="hbtn-v" href="#projects">View My Work</a>
+        <a class="hbtn-t" href="mailto:ayushverma16161@gmail.com">Let's Collaborate</a>
+      </div>
+      <div class="hero-contact-row">
+        <div class="hc-item">
+          <div class="hc-ico v">✉</div><a href="mailto:ayushverma16161@gmail.com">ayushverma16161@gmail.com</a>
+        </div>
+        <div class="hc-item">
+          <div class="hc-ico t">in</div><a href="https://linkedin.com/in/ayushverma-web"
+            target="_blank">linkedin.com/in/ayushverma-web</a>
+        </div>
+        <div class="hc-item">
+          <div class="hc-ico v" style="font-size:14px;">🐙</div><a href="https://github.com/ayushverma-in"
+            target="_blank" rel="noopener" target="_blank">github.com/ayushverma-in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- FLOATING TECH GADGET -->
+      <div class="hcard glass gadget-card"
+        style="padding:14px;background:rgba(5,5,5,.95);border-color:#1a1a1a;overflow:hidden;position:relative;">
+        <div
+          style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--pink),var(--teal2));">
+        </div>
+        <svg width="100%" viewBox="0 0 360 175" xmlns="http://www.w3.org/2000/svg"
+          style="animation:gadgetFloat 5s ease-in-out infinite;">
+          <defs>
+            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#9b5cf6" />
+              <stop offset="1" stop-color="#ec4899" />
+            </linearGradient>
+            <linearGradient id="gg2" x1="0" y1="0" x2="1" y2="0">
+              <stop stop-color="#14b8a6" />
+              <stop offset="1" stop-color="#9b5cf6" />
+            </linearGradient>
+            <filter id="gf">
+              <feGaussianBlur stdDeviation="4" />
+            </filter>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <!-- Glow behind monitor -->
+          <ellipse cx="165" cy="95" rx="120" ry="60" fill="#9b5cf6" opacity=".04" filter="url(#gf)" />
+          <!-- Monitor body -->
+          <rect x="52" y="8" width="200" height="132" rx="10" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1.2" />
+          <!-- Screen -->
+          <rect x="62" y="18" width="180" height="112" rx="5" fill="#060606" />
+          <!-- Top bar chrome -->
+          <rect x="62" y="18" width="180" height="18" rx="5" fill="#111" />
+          <circle cx="73" cy="27" r="3.5" fill="#ff5f57" opacity=".8" />
+          <circle cx="83" cy="27" r="3.5" fill="#febc2e" opacity=".8" />
+          <circle cx="93" cy="27" r="3.5" fill="#28c840" opacity=".8" />
+          <rect x="130" y="22" width="60" height="10" rx="3" fill="#1a1a1a" />
+          <text x="160" y="29" text-anchor="middle" font-size="5" fill="#555"
+            font-family="monospace">portfolio.py</text>
+          <!-- Code sidebar -->
+          <rect x="62" y="36" width="38" height="94" fill="#080808" stroke="#1a1a1a" stroke-width=".5" />
+          <!-- Line numbers -->
+          <text x="75" y="50" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">01</text>
+          <text x="75" y="60" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">02</text>
+          <text x="75" y="70" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">03</text>
+          <text x="75" y="80" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">04</text>
+          <text x="75" y="90" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">05</text>
+          <text x="75" y="100" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">06</text>
+          <text x="75" y="110" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">07</text>
+          <text x="75" y="120" text-anchor="middle" font-size="5" fill="#333" font-family="monospace">08</text>
+          <!-- Code lines -->
+          <rect x="106" y="44" width="55" height="3" rx="1.5" fill="#9b5cf6" opacity=".9" filter="url(#glow)" />
+          <rect x="106" y="52" width="80" height="2.5" rx="1" fill="#ec4899" opacity=".65" />
+          <rect x="114" y="60" width="62" height="2.5" rx="1" fill="#444" />
+          <rect x="114" y="68" width="88" height="2.5" rx="1" fill="#14b8a6" opacity=".55" />
+          <rect x="114" y="76" width="50" height="2.5" rx="1" fill="#444" />
+          <rect x="114" y="84" width="76" height="2.5" rx="1" fill="#9b5cf6" opacity=".5" />
+          <rect x="106" y="92" width="42" height="2.5" rx="1" fill="#ec4899" opacity=".7" />
+          <rect x="106" y="100" width="70" height="2.5" rx="1" fill="#444" />
+          <!-- Mini chart panel -->
+          <rect x="200" y="40" width="36" height="56" rx="4" fill="#0a0a0a" stroke="#222" />
+          <text x="218" y="50" text-anchor="middle" font-size="5" fill="#555" font-family="monospace">stats</text>
+          <polyline points="204,90 208,78 213,84 219,66 225,72 231,56" fill="none" stroke="url(#gg)" stroke-width="1.8"
+            opacity=".9" filter="url(#glow)" />
+          <polyline points="204,90 208,85 213,88 219,78 225,80 231,70" fill="none" stroke="url(#gg2)" stroke-width="1.2"
+            opacity=".4" />
+          <!-- Terminal strip -->
+          <rect x="100" y="112" width="136" height="30" rx="4" fill="#020202" stroke="#1a1a1a" />
+          <text x="108" y="124" font-size="6.5" fill="#9b5cf6" font-family="monospace" opacity=".95">$ python
+            analyze.py</text>
+          <text x="108" y="134" font-size="6.5" fill="#28c840" font-family="monospace" opacity=".8">&#x276F; Accuracy:
+            98.6% ✓</text>
+          <rect x="108" y="136" width="5" height="8" rx="1" fill="#9b5cf6" opacity=".9">
+            <animate attributeName="opacity" values="0.9;0;0.9" dur="1s" repeatCount="indefinite" />
+          </rect>
+          <!-- Monitor stand -->
+          <rect x="147" y="140" width="26" height="18" rx="3" fill="#0d0d0d" stroke="#1a1a1a" />
+          <rect x="130" y="156" width="60" height="6" rx="3" fill="#0d0d0d" stroke="#1a1a1a" />
+          <!-- Floating phone right -->
+          <g style="animation:phoneFloat 4s ease-in-out infinite 0.5s;">
+            <rect x="282" y="22" width="36" height="62" rx="8" fill="#0d0d0d" stroke="#2a2a2a" />
+            <rect x="286" y="30" width="28" height="46" rx="4" fill="#060606" />
+            <rect x="292" y="25" width="12" height="2.5" rx="1.25" fill="#222" />
+            <rect x="289" y="35" width="22" height="2.5" rx="1" fill="#9b5cf6" opacity=".55" />
+            <rect x="289" y="41" width="16" height="2" rx="1" fill="#333" />
+            <rect x="289" y="47" width="22" height="16" rx="3" fill="#0a0a0a" stroke="#1a1a1a" />
+            <polyline points="292,60 296,53 300,57 305,49 309,51" fill="none" stroke="#14b8a6" stroke-width="1.3"
+              opacity=".8" />
+            <rect x="289" y="66" width="22" height="2" rx="1" fill="#ec4899" opacity=".4" />
+            <circle cx="300" cy="77" r="4" fill="#1a1a1a" />
+          </g>
+          <!-- Keyboard bottom -->
+          <g style="animation:gadgetFloat 6s ease-in-out infinite 1s;">
+            <rect x="20" y="155" width="170" height="15" rx="5" fill="#0d0d0d" stroke="#1a1a1a" />
+            <rect x="25" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="42" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="59" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="76" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="93" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="110" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="127" y="158" width="14" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <rect x="144" y="158" width="40" height="8" rx="2" fill="#141414" stroke="#222" stroke-width=".5" />
+            <!-- Glowing key -->
+            <rect x="25" y="158" width="14" height="8" rx="2" fill="#9b5cf615" stroke="#9b5cf6" stroke-width=".8" />
+            <text x="32" y="164" text-anchor="middle" font-size="4" fill="#9b5cf6"
+              font-family="monospace">&lt;/&gt;</text>
+          </g>
+          <!-- Floating dots -->
+          <circle cx="18" cy="60" r="2.5" fill="#9b5cf6" opacity=".6">
+            <animate attributeName="opacity" values=".6;.1;.6" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="344" cy="110" r="2" fill="#ec4899" opacity=".5">
+            <animate attributeName="opacity" values=".5;.1;.5" dur="3.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="20" cy="140" r="1.5" fill="#14b8a6" opacity=".4">
+            <animate attributeName="opacity" values=".4;.8;.4" dur="4s" repeatCount="indefinite" />
+          </circle>
+          <!-- Star Trek inspired badge (top right corner) -->
+          <g transform="translate(320,10) scale(0.55)" opacity=".7">
+            <polygon points="30,0 60,15 60,45 30,60 0,45 0,15" fill="none" stroke="#9b5cf6" stroke-width="1.5"
+              opacity=".5" />
+            <polygon points="30,8 52,20 52,40 30,52 8,40 8,20" fill="#9b5cf610" stroke="#9b5cf6" stroke-width="1"
+              opacity=".6" />
+            <polygon points="30,20 42,26 42,34 30,40 18,34 18,26" fill="#9b5cf6" opacity=".3" />
+            <circle cx="30" cy="30" r="4" fill="#9b5cf6" opacity=".6" />
+          </g>
+        </svg>
+      </div>
+      <div class="hcard glass skills-card">
+        <div class="sc-title">Core Skills</div>
+        <div class="pills-wrap">
+          <span class="pill v">Python</span>
+          <span class="pill v">C Language</span>
+          <span class="pill p">SQL</span>
+          <span class="pill t">Excel</span>
+          <span class="pill t">EDA</span>
+          <span class="pill a">Prompt Engineering</span>
+          <span class="pill a">VLOOKUP</span>
+          <span class="pill l">VS Code</span>
+          <span class="pill p">Data Cleaning</span>
+          <span class="pill v">CRUD Ops</span>
+          <span class="pill t">Pivot Tables</span>
+        </div>
+      </div>
+      <div class="hcard glass" style="background:rgba(124,58,237,.07);border-color:rgba(124,58,237,.25);">
+        <div class="sc-title" style="color:var(--violet2);margin-bottom:14px;">⚡ Quick Info</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div
+            style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,.04);border-radius:10px;border:1px solid var(--border);">
+            <span style="font-size:12px;color:var(--muted);">🎓 Degree</span>
+            <span style="font-size:12px;font-weight:600;color:var(--white);">Technical</span>
+          </div>
+          <div
+            style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,.04);border-radius:10px;border:1px solid var(--border);">
+            <span style="font-size:12px;color:var(--muted);">📍 Location</span>
+            <span style="font-size:12px;font-weight:600;color:var(--white);">India</span>
+          </div>
+          <div
+            style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,.04);border-radius:10px;border:1px solid var(--border);">
+            <span style="font-size:12px;color:var(--muted);">⚡ Response</span>
+            <span style="font-size:12px;font-weight:600;color:var(--white);">Within 24 hours</span>
+          </div>
+          <div
+            style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(20,184,166,.08);border-radius:10px;border:1px solid rgba(20,184,166,.25);">
+            <span style="font-size:12px;color:var(--muted);">💼 Status</span>
+            <span style="font-size:12px;font-weight:700;color:var(--teal2);">● Open to Internships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mq-wrap">
+    <div class="mq-track">
+      <span class="mq-item mi-v">✦ Python Developer</span>
+      <span class="mq-item mi-p">✦ Data Analysis</span>
+      <span class="mq-item mi-t">✦ SQL Queries</span>
+      <span class="mq-item mi-a">✦ Microsoft Excel</span>
+      <span class="mq-item mi-v">✦ Prompt Engineering</span>
+      <span class="mq-item mi-p">✦ CRUD Applications</span>
+      <span class="mq-item mi-t">✦ Computer Science</span>
+      <span class="mq-item mi-a">✦ IncodeVision Intern</span>
+      <span class="mq-item mi-v">✦ Python Developer</span>
+      <span class="mq-item mi-p">✦ Data Analysis</span>
+      <span class="mq-item mi-t">✦ SQL Queries</span>
+      <span class="mq-item mi-a">✦ Microsoft Excel</span>
+      <span class="mq-item mi-v">✦ Prompt Engineering</span>
+      <span class="mq-item mi-p">✦ CRUD Applications</span>
+      <span class="mq-item mi-t">✦ Computer Science</span>
+      <span class="mq-item mi-a">✦ IncodeVision Intern</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="sec-eyebrow anim"><span class="ew-num">01</span>
+      <div class="ew-line v"></div><span class="ew-tag v">About Me</span>
+    </div>
+    <h2 class="sec-h anim d1">WHO I <span>AM</span></h2>
+    <p class="sec-sub anim d2">A passionate developer and analyst from India — building the future one line of code at a
+      time.</p>
+    <div class="about-layout">
+      <div class="anim d1">
+        <div class="about-text">
+          <p>I'm <strong>Ayush Verma</strong>, a first-year Computer Science student at <strong>Veer Kunwar Singh
+              University, Ara, Bihar</strong>. I'm deeply passionate about technology, data, and building software that
+            solves real-world problems efficiently.</p>
+          <p>Through my <strong>Python Programmer Internship at IncodeVision</strong>, I built real-world tools — from a
+            Password Generator to a full CRUD-based Task Manager — applying core Python concepts in practical settings.
+          </p>
+          <p>Beyond coding, I've earned <strong>3 international certifications</strong> in Data Analytics, Excel, and
+            Prompt Engineering for AI Systems from globally recognized organizations — reflecting my commitment to
+            continuous growth.</p>
+        </div>
+      </div>
+      <div class="about-cards anim d2">
+        <div class="abt-card">
+          <div class="abt-card-ico ico-v">🎓</div>
+          <div>
+            <div class="abt-lbl">Degree</div>
+            <div class="abt-val">Bachelor of Computer Applications</div>
+          </div>
+        </div>
+        <div class="abt-card">
+          <div class="abt-card-ico ico-p">🏛️</div>
+          <div>
+            <div class="abt-lbl">University</div>
+            <div class="abt-val">Veer Kunwar Singh University, Ara</div>
+          </div>
+        </div>
+        <div class="abt-card">
+          <div class="abt-card-ico ico-t">📅</div>
+          <div>
+            <div class="abt-lbl">Duration</div>
+            <div class="abt-val">Aug 2025 – May 2028</div>
+          </div>
+        </div>
+        <div class="abt-card">
+          <div class="abt-card-ico ico-a">📍</div>
+          <div>
+            <div class="abt-lbl">Location</div>
+            <div class="abt-val">India – 802101</div>
+          </div>
+        </div>
+        <div class="abt-card">
+          <div class="abt-card-ico ico-v">🌐</div>
+          <div>
+            <div class="abt-lbl">Languages</div>
+            <div class="abt-val">Hindi (Native) · English (Proficient)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="sec-eyebrow anim"><span class="ew-num">02</span>
+      <div class="ew-line p"></div><span class="ew-tag p">Services</span>
+    </div>
+    <h2 class="sec-h anim d1">WHAT I <span
+        style="background:linear-gradient(90deg,var(--pink),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">DO</span>
+    </h2>
+    <p class="sec-sub anim d2">Core services I offer — from automation to analytics to intelligent AI workflows.</p>
+    <div class="srv-grid anim d1">
+      <div class="srv-card c1">
+        <div class="srv-top-bar bar-v"></div>
+        <span class="srv-n">01</span>
+        <div class="srv-ico">🐍</div>
+        <div class="srv-title">Python Dev</div>
+        <p class="srv-desc">Building automation tools, CLI applications, and utility scripts. Password generators, task
+          managers, and more with clean modular code.</p>
+      </div>
+      <div class="srv-card c2">
+        <div class="srv-top-bar bar-p"></div>
+        <span class="srv-n">02</span>
+        <div class="srv-ico">📊</div>
+        <div class="srv-title">Data Analysis</div>
+        <p class="srv-desc">Extracting insights using Excel, Pivot Tables, VLOOKUP, and EDA techniques. Turning raw
+          datasets into clear, actionable findings.</p>
+      </div>
+      <div class="srv-card c3">
+        <div class="srv-top-bar bar-t"></div>
+        <span class="srv-n">03</span>
+        <div class="srv-ico">🤖</div>
+        <div class="srv-title">AI & Automation</div>
+        <p class="srv-desc">Certified Prompt Engineering for AI Systems. Designing intelligent prompts and automation
+          workflows to maximize productivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="sec-eyebrow anim"><span class="ew-num">03</span>
+      <div class="ew-line t"></div><span class="ew-tag t">Selected Work</span>
+    </div>
+    <h2 class="sec-h anim d1">MY <span
+        style="background:linear-gradient(90deg,var(--teal2),var(--violet2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">PROJECTS</span>
+    </h2>
+    <p class="sec-sub anim d2">Real applications built during internship and personal exploration.</p>
+    <div class="proj-grid">
+      <!-- PROJECT 1 -->
+      <div class="proj-card anim d1">
+        <div class="pc-glow gv"></div>
+        <div class="pc-header">
+          <div class="pc-top"><span class="pc-type pct-v">Python · Security</span><span class="pc-num">01</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-name">PASSWORD<br />GENERATOR</div>
+          <p class="pc-desc">Customizable password generator with dynamic character selection, length validation, and
+            advanced randomization logic for high-entropy secure passwords.</p>
+          <div class="pc-tags"><span class="pc-tag">Python</span><span class="pc-tag">Randomization</span><span
+              class="pc-tag">String Manipulation</span><span class="pc-tag">Logic Building</span></div>
+          <button class="pc-arrow pa-v proj-detail-btn" onclick="openModal('modal1')">View Details →</button>
+        </div>
+      </div>
+      <!-- PROJECT 2 -->
+      <div class="proj-card anim d2">
+        <div class="pc-glow gp"></div>
+        <div class="pc-header">
+          <div class="pc-top"><span class="pc-type pct-p">Python · CLI App</span><span class="pc-num">02</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-name">TO-DO LIST<br />MANAGER</div>
+          <p class="pc-desc">Command-line task manager with full CRUD operations — Create, Read, Update, Delete —
+            featuring persistent file storage and modular code architecture.</p>
+          <div class="pc-tags"><span class="pc-tag">Python</span><span class="pc-tag">CRUD</span><span
+              class="pc-tag">File Handling</span><span class="pc-tag">Modular Code</span></div>
+          <button class="pc-arrow pa-p proj-detail-btn" onclick="openModal('modal2')">View Details →</button>
+        </div>
+      </div>
+      <!-- PROJECT 3 -->
+      <div class="proj-card anim d3">
+        <div class="pc-glow gt"></div>
+        <div class="pc-header">
+          <div class="pc-top"><span class="pc-type pct-t">Excel · Data</span><span class="pc-num">03</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-name">EXCEL ANALYTICS<br />DASHBOARD</div>
+          <p class="pc-desc">Data analytics project applying pivot tables, VLOOKUP, data cleaning and EDA techniques
+            from UpGrad certification to real-world datasets.</p>
+          <div class="pc-tags"><span class="pc-tag">Excel</span><span class="pc-tag">EDA</span><span
+              class="pc-tag">Pivot Tables</span><span class="pc-tag">VLOOKUP</span></div>
+          <button class="pc-arrow proj-detail-btn" style="color:var(--teal2);" onclick="openModal('modal3')">View
+            Details →</button>
+        </div>
+      </div>
+      <!-- PROJECT 4 -->
+      <div class="proj-card anim d4">
+        <div class="pc-glow ga"></div>
+        <div class="pc-header">
+          <div class="pc-top"><span class="pc-type pct-a">Web · Frontend</span><span class="pc-num">04</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-name">PERSONAL<br />PORTFOLIO</div>
+          <p class="pc-desc">This portfolio website — built with pure HTML, CSS, and JavaScript. Features Three.js
+            animated background, smooth scroll animations, and responsive layout.</p>
+          <div class="pc-tags"><span class="pc-tag">HTML/CSS</span><span class="pc-tag">JavaScript</span><span
+              class="pc-tag">Three.js</span><span class="pc-tag">Responsive</span></div>
+          <button class="pc-arrow proj-detail-btn" style="color:var(--amber2);" onclick="openModal('modal4')">View
+            Details →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECT MODALS ═══ -->
+
+  <!-- MODAL 1: Password Generator -->
+  <div class="modal-overlay" id="modal1" onclick="closeModalOutside(event,'modal1')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal1')">✕</button>
+      <span class="modal-tag"
+        style="background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.35);color:var(--violet2);">🔐 Python ·
+        Security</span>
+      <div class="modal-title">PASSWORD<br />GENERATOR</div>
+      <p class="modal-desc">Built during my internship at IncodeVision, this Python tool generates cryptographically
+        strong, customizable passwords. The app lets users define character sets — uppercase, lowercase, digits, symbols
+        — and specify exact length requirements, outputting high-entropy passwords ideal for real security use cases.
+      </p>
+      <div class="modal-section-title" style="color:var(--violet2);">Key Features</div>
+      <div class="modal-features">
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);">⚙️
+          </div>
+          <div><strong>Dynamic character selection</strong> — toggle uppercase, lowercase, digits, and symbols
+            independently for maximum flexibility.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);">✅
+          </div>
+          <div><strong>Length validation</strong> — enforces minimum and maximum length constraints to prevent weak
+            output.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);">🎲
+          </div>
+          <div><strong>Advanced randomization</strong> — uses Python's <code
+              style="background:rgba(124,58,237,.15);padding:2px 6px;border-radius:4px;font-size:12px;">secrets</code>
+            module for cryptographic-grade entropy.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);">🔁
+          </div>
+          <div><strong>Batch generation</strong> — generate multiple unique passwords in a single run with a loop-based
+            approach.</div>
+        </div>
+      </div>
+      <div class="modal-section-title" style="color:var(--violet2);">Tech Stack</div>
+      <div class="modal-tags-wrap">
+        <span class="pill v">Python 3</span><span class="pill v">secrets module</span><span class="pill v">string
+          module</span><span class="pill v">CLI Interface</span><span class="pill v">Logic Building</span>
+      </div>
+      <a class="modal-cta" href="mailto:ayushverma16161@gmail.com">✉ Ask About This Project</a>
+    </div>
+  </div>
+
+  <!-- MODAL 2: To-Do List Manager -->
+  <div class="modal-overlay" id="modal2" onclick="closeModalOutside(event,'modal2')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal2')">✕</button>
+      <span class="modal-tag"
+        style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.3);color:var(--pink2);">✅ Python · CLI
+        App</span>
+      <div class="modal-title">TO-DO LIST<br />MANAGER</div>
+      <p class="modal-desc">A fully-featured command-line task manager built in Python with complete CRUD functionality.
+        Tasks are saved persistently to a local file, meaning your to-do list survives between sessions. Designed with a
+        clean modular architecture where each function handles one responsibility — a real-world demonstration of clean
+        code principles.</p>
+      <div class="modal-section-title" style="color:var(--pink2);">Key Features</div>
+      <div class="modal-features">
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.25);">➕
+          </div>
+          <div><strong>Create tasks</strong> — add new tasks with titles, optional descriptions, and timestamps.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.25);">👁️
+          </div>
+          <div><strong>Read & list tasks</strong> — view all pending tasks in a clean numbered CLI format.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.25);">✏️
+          </div>
+          <div><strong>Update & mark complete</strong> — edit task details or toggle completion status.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.25);">💾
+          </div>
+          <div><strong>Persistent file storage</strong> — tasks saved to a <code
+              style="background:rgba(236,72,153,.12);padding:2px 6px;border-radius:4px;font-size:12px;">.txt</code> file
+            and reloaded automatically on launch.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(236,72,153,.15);border:1px solid rgba(236,72,153,.25);">🧩
+          </div>
+          <div><strong>Modular architecture</strong> — each operation is a separate function, making the code easy to
+            extend.</div>
+        </div>
+      </div>
+      <div class="modal-section-title" style="color:var(--pink2);">Tech Stack</div>
+      <div class="modal-tags-wrap">
+        <span class="pill p">Python 3</span><span class="pill p">File I/O</span><span class="pill p">CRUD
+          Logic</span><span class="pill p">Functions</span><span class="pill p">CLI Design</span>
+      </div>
+      <a class="modal-cta" href="mailto:ayushverma16161@gmail.com">✉ Ask About This Project</a>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Excel Dashboard -->
+  <div class="modal-overlay" id="modal3" onclick="closeModalOutside(event,'modal3')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal3')">✕</button>
+      <span class="modal-tag"
+        style="background:rgba(20,184,166,.15);border:1px solid rgba(20,184,166,.3);color:var(--teal2);">📊 Excel · Data
+        Analytics</span>
+      <div class="modal-title">EXCEL ANALYTICS<br />DASHBOARD</div>
+      <p class="modal-desc">A practical data analytics project applying core Excel skills from my UpGrad certification.
+        Using a real-world sales dataset, I designed an interactive dashboard with pivot tables, dynamic charts, and
+        VLOOKUP-powered lookups — turning raw numbers into clear business insights.</p>
+      <div class="modal-section-title" style="color:var(--teal2);">Key Features</div>
+      <div class="modal-features">
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(20,184,166,.15);border:1px solid rgba(20,184,166,.25);">📈
+          </div>
+          <div><strong>Interactive Pivot Tables</strong> — summarise revenue, units, and trends across regions and time
+            periods.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(20,184,166,.15);border:1px solid rgba(20,184,166,.25);">🔍
+          </div>
+          <div><strong>VLOOKUP lookups</strong> — cross-reference product IDs, categories, and pricing across multiple
+            sheets.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(20,184,166,.15);border:1px solid rgba(20,184,166,.25);">🧹
+          </div>
+          <div><strong>Data Cleaning</strong> — handled missing values, removed duplicates, and standardized formats for
+            accurate analysis.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(20,184,166,.15);border:1px solid rgba(20,184,166,.25);">📉
+          </div>
+          <div><strong>EDA charts</strong> — bar charts, line graphs, and conditional formatting to highlight key
+            findings visually.</div>
+        </div>
+      </div>
+      <div class="modal-section-title" style="color:var(--teal2);">Tech Stack</div>
+      <div class="modal-tags-wrap">
+        <span class="pill t">Microsoft Excel</span><span class="pill t">Pivot Tables</span><span
+          class="pill t">VLOOKUP</span><span class="pill t">EDA</span><span class="pill t">Data Cleaning</span><span
+          class="pill t">Charts</span>
+      </div>
+      <a class="modal-cta" style="background:linear-gradient(135deg,var(--teal),var(--teal2));box-shadow:0 6px 20px rgba(20,184,166,.25);" href="mailto:ayushverma16161@gmail.com">✉ Ask About This Project</a>
+    </div>
+  </div>
+
+  <!-- MODAL 4: Portfolio -->
+  <div class="modal-overlay" id="modal4" onclick="closeModalOutside(event,'modal4')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('modal4')">✕</button>
+      <span class="modal-tag"
+        style="background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);color:var(--amber2);">🌐 Web ·
+        Frontend</span>
+      <div class="modal-title">PERSONAL<br />PORTFOLIO</div>
+      <p class="modal-desc">This very website — designed and coded from scratch with pure HTML, CSS, and JavaScript.
+        Features a Three.js 3D particle background, intersection-observer-powered scroll animations, a marquee ticker,
+        tabbed experience section, and a fully responsive layout. Built to showcase my work professionally while
+        demonstrating my growing web development skills.</p>
+      <div class="modal-section-title" style="color:var(--amber2);">Key Features</div>
+      <div class="modal-features">
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.25);">✨
+          </div>
+          <div><strong>Three.js animated background</strong> — 4000 colored star particles with mouse parallax and
+            rotating nebula rings.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.25);">🎞️
+          </div>
+          <div><strong>Scroll animations</strong> — elements fade in using IntersectionObserver for a polished,
+            professional feel.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.25);">📱
+          </div>
+          <div><strong>Responsive design</strong> — adapts smoothly to desktop, tablet, and mobile screen sizes.</div>
+        </div>
+        <div class="modal-feat">
+          <div class="modal-feat-ico" style="background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.25);">🎨
+          </div>
+          <div><strong>Custom design system</strong> — consistent color palette (violet, pink, teal, amber) with CSS
+            variables throughout.</div>
+        </div>
+      </div>
+      <div class="modal-section-title" style="color:var(--amber2);">Tech Stack</div>
+      <div class="modal-tags-wrap">
+        <span class="pill a">HTML5</span><span class="pill a">CSS3</span><span class="pill a">JavaScript</span><span
+          class="pill a">Three.js</span><span class="pill a">CSS Animations</span>
+      </div>
+      <a class="modal-cta" style="background:linear-gradient(135deg,var(--amber),var(--pink));box-shadow:0 6px 20px rgba(245,158,11,.25);" href="mailto:ayushverma16161@gmail.com">✉ Ask About This Project</a>
+    </div>
+  </div>
+  <section class="section skills-section" id="skills">
+    <div class="sec-eyebrow anim"><span class="ew-num">04</span>
+      <div class="ew-line a"></div><span class="ew-tag a">Technical Skills</span>
+    </div>
+    <h2 class="sec-h anim d1">WHAT I <span
+        style="background:linear-gradient(90deg,var(--amber),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">KNOW</span>
+    </h2>
+    <p class="sec-sub anim d2">Core technologies and tools I use to build and analyse.</p>
+    <div class="skills-grid">
+      <div class="sk-card skv anim d1">
+        <div class="sk-head">
+          <div class="sk-ico-wrap siw-v">💻</div>
+          <div class="sk-title">Programming</div>
+        </div>
+        <div class="pills-wrap" style="gap:10px;">
+          <span class="pill v" style="padding:8px 16px;font-size:12px;">Python</span>
+          <span class="pill v" style="padding:8px 16px;font-size:12px;">C Language</span>
+          <span class="pill v" style="padding:8px 16px;font-size:12px;">SQL</span>
+          <span class="pill v" style="padding:8px 16px;font-size:12px;">CRUD Operations</span>
+          <span class="pill v" style="padding:8px 16px;font-size:12px;">OOP Concepts</span>
+          <span class="pill v" style="padding:8px 16px;font-size:12px;">File Handling</span>
+        </div>
+      </div>
+      <div class="sk-card skp anim d2">
+        <div class="sk-head">
+          <div class="sk-ico-wrap siw-p">📊</div>
+          <div class="sk-title">Data Tools</div>
+        </div>
+        <div class="pills-wrap" style="gap:10px;">
+          <span class="pill p" style="padding:8px 16px;font-size:12px;">Microsoft Excel</span>
+          <span class="pill p" style="padding:8px 16px;font-size:12px;">Pivot Tables</span>
+          <span class="pill p" style="padding:8px 16px;font-size:12px;">VLOOKUP</span>
+          <span class="pill p" style="padding:8px 16px;font-size:12px;">EDA</span>
+          <span class="pill p" style="padding:8px 16px;font-size:12px;">Data Cleaning</span>
+          <span class="pill p" style="padding:8px 16px;font-size:12px;">Data Visualization</span>
+        </div>
+      </div>
+      <div class="sk-card ska anim d3">
+        <div class="sk-head">
+          <div class="sk-ico-wrap siw-a">🤖</div>
+          <div class="sk-title">AI & Tools</div>
+        </div>
+        <div class="pills-wrap" style="gap:10px;">
+          <span class="pill a" style="padding:8px 16px;font-size:12px;">Prompt Engineering</span>
+          <span class="pill a" style="padding:8px 16px;font-size:12px;">VS Code</span>
+          <span class="pill a" style="padding:8px 16px;font-size:12px;">AI Workflows</span>
+          <span class="pill a" style="padding:8px 16px;font-size:12px;">Git Basics</span>
+          <span class="pill a" style="padding:8px 16px;font-size:12px;">MS Office</span>
+          <span class="pill a" style="padding:8px 16px;font-size:12px;">PowerPoint</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" style="background:var(--ink2);border-top:1px solid var(--border);">
+    <div class="sec-eyebrow anim"><span class="ew-num">05</span>
+      <div class="ew-line v"></div><span class="ew-tag v">Experience</span>
+    </div>
+    <h2 class="sec-h anim d1">WHERE I'VE <span>WORKED</span></h2>
+    <p class="sec-sub anim d2">Real-world experience building Python apps and presenting at technical events.</p>
+    <div class="exp-layout anim d1">
+      <div class="exp-nav">
+        <div class="etab active" onclick="swE(0,this)">
+          <div class="etab-co">INCODEVISION</div>
+          <div class="etab-r">Python Programmer Intern</div>
+          <div class="etab-p">Feb – Mar 2026</div>
+        </div>
+        <div class="etab" onclick="swE(1,this)">
+          <div class="etab-co">M.V. COLLEGE</div>
+          <div class="etab-r">Technical Presenter</div>
+          <div class="etab-p">2025 – 2026</div>
+        </div>
+      </div>
+      <div>
+        <div class="exp-panel active" id="ep-0">
+          <div class="ep-title">Python Programmer Intern</div>
+          <div class="ep-bdgs"><span class="ep-bdg bdg-v">IncodeVision</span><span class="ep-bdg bdg-m">Feb – Mar
+              2026</span><span class="ep-bdg bdg-g">Completed ✓</span></div>
+          <div class="ep-points">
+            <div class="epoint">
+              <div class="ep-ico">🔐</div>
+              <div class="ep-txt">Built a <strong>customizable Password Generator</strong> with dynamic character
+                selection, length validation, and advanced randomization for secure output.</div>
+            </div>
+            <div class="epoint">
+              <div class="ep-ico">✅</div>
+              <div class="ep-txt">Developed a <strong>console-based To-Do List App</strong> with full CRUD operations
+                and persistent file storage.</div>
+            </div>
+            <div class="epoint">
+              <div class="ep-ico">⚙️</div>
+              <div class="ep-txt">Applied <strong>loops, functions, conditional logic, and file handling</strong> in
+                real Python applications.</div>
+            </div>
+            <div class="epoint">
+              <div class="ep-ico">🐛</div>
+              <div class="ep-txt">Debugged and <strong>optimized code</strong> to improve functionality and execution
+                efficiency.</div>
+            </div>
+            <div class="epoint">
+              <div class="ep-ico">🧠</div>
+              <div class="ep-txt">Strengthened skills through <strong>structured coding challenges</strong> and
+                real-world task simulations.</div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-panel" id="ep-1">
+          <div class="ep-title">Technical Presenter</div>
+          <div class="ep-bdgs"><span class="ep-bdg bdg-v">M.V. College</span><span class="ep-bdg bdg-m">2025 –
+              2026</span></div>
+          <div class="ep-points">
+            <div class="epoint">
+              <div class="ep-ico">📊</div>
+              <div class="ep-txt">Delivered a <strong>PowerPoint Presentation</strong> at M.V. College to a live
+                technical audience.</div>
+            </div>
+            <div class="epoint">
+              <div class="ep-ico">🤖</div>
+              <div class="ep-txt">Participated in an <strong>AI Seminar</strong> — engaging with current trends in
+                Artificial Intelligence and applications.</div>
+            </div>
+            <div class="epoint">
+              <div class="ep-ico">🎤</div>
+              <div class="ep-txt">Built <strong>public speaking confidence</strong> representing the institution at
+                technical events.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <div class="sec-eyebrow anim"><span class="ew-num">06</span>
+      <div class="ew-line p"></div><span class="ew-tag p">Education</span>
+    </div>
+    <h2 class="sec-h anim d1">MY <span
+        style="background:linear-gradient(90deg,var(--pink),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">JOURNEY</span>
+    </h2>
+    <div class="edu-grid">
+      <div class="edu-card eca anim d1">
+        <div class="edu-card-glow ecg-v"></div>
+        <span class="edu-yr eyr-v">Aug 2025 – May 2028 · Current</span>
+        <div class="edu-deg">Bachelor of Computer Applications (BCA)</div>
+        <div class="edu-sch esch-v">Veer Kunwar Singh University, Ara</div>
+        <div class="edu-loc">Bihar, India</div>
+        <span class="edu-badge ebdg-v">● Currently Enrolled</span>
+      </div>
+      <div class="edu-card ecb anim d2">
+        <div class="edu-card-glow ecg-p"></div>
+        <span class="edu-yr eyr-p">May 2023 – May 2025 · Completed</span>
+        <div class="edu-deg">Higher Secondary — 12th Standard</div>
+        <div class="edu-sch esch-p">Heritage School, Arjunpur</div>
+        <div class="edu-loc">Bihar, India</div>
+        <span class="edu-badge ebdg-m">Completed ✓</span>
+      </div>
+    </div>
+
+    <div style="height:60px;"></div>
+    <div class="sec-eyebrow anim"><span class="ew-num">07</span>
+      <div class="ew-line a"></div><span class="ew-tag a">Certifications</span>
+    </div>
+    <h2 class="sec-h anim d1">MY <span
+        style="background:linear-gradient(90deg,var(--amber),var(--lime));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">CREDENTIALS</span>
+    </h2>
+    <div class="cert-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="ct-card ctv anim d1" onclick="openCert('cert-dubai')">
+        <div class="ct-glow"></div>
+        <div class="ct-ico-wrap">🤖</div>
+        <div class="ct-name">Prompt Engineering for AI Systems</div>
+        <div class="ct-org">Dubai Future Foundation</div>
+        <div class="ct-date">December 2025</div>
+      </div>
+      <div class="ct-card ctv anim d2" onclick="openCert('cert-forage')">
+        <div class="ct-glow"></div>
+        <div class="ct-ico-wrap">📊</div>
+        <div class="ct-name">Data Analytics Job Simulation</div>
+        <div class="ct-org">Forage</div>
+        <div class="ct-date">November 2025</div>
+      </div>
+      <div class="ct-card ctv anim d3" onclick="openCert('cert-upgrad')">
+        <div class="ct-glow"></div>
+        <div class="ct-ico-wrap">📈</div>
+        <div class="ct-name">Introduction to Data Analysis using Excel</div>
+        <div class="ct-org">UpGrad</div>
+        <div class="ct-date">October 2025</div>
+      </div>
+      <div class="ct-card ctv anim d4" onclick="openCert('cert-oracle')">
+        <div class="ct-glow"></div>
+        <div class="ct-ico-wrap">☁️</div>
+        <div class="ct-name">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</div>
+        <div class="ct-org">Oracle University</div>
+        <div class="ct-date">October 2025</div>
+      </div>
+      <div class="ct-card ctv anim d5" onclick="openCert('cert-incode')">
+        <div class="ct-glow"></div>
+        <div class="ct-ico-wrap">🐍</div>
+        <div class="ct-name">Python Programming Internship Certificate</div>
+        <div class="ct-org">IncodeVision · MSME Certified</div>
+        <div class="ct-date">Feb – Mar 2026 · ID: ICV/FEB26/12246</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-layout">
+      <div class="ct-left anim">
+        <div class="ct-left-bg"></div>
+        <div class="ct-left-bg2"></div>
+        <span class="ew-tag v" style="display:block;margin-bottom:16px;font-size:10px;letter-spacing:2px;">07 —
+          Contact</span>
+        <h2 class="ct-h">LET'S<br /><span>WORK</span><br />TOGETHER.</h2>
+        <p class="ct-sub">Open to internships, collaborative projects, and freelance work. If you have something
+          exciting — I'd love to hear from you.</p>
+        <div class="ct-links">
+          <a class="ctlnk" href="mailto:ayushverma16161@gmail.com">
+            <div class="ctlnk-l">
+              <div class="ctlnk-ico ico-v">✉</div>
+              <div>
+                <div class="ctlnk-lbl">Email</div>
+                <div class="ctlnk-val">ayushverma16161@gmail.com</div>
+              </div>
+            </div><span class="ctlnk-arr">↗</span>
+          </a>
+          <a class="ctlnk" href="https://linkedin.com/in/ayushverma-web" target="_blank">
+            <div class="ctlnk-l">
+              <div class="ctlnk-ico ico-t">in</div>
+              <div>
+                <div class="ctlnk-lbl">LinkedIn</div>
+                <div class="ctlnk-val">ayushverma-web</div>
+              </div>
+            </div><span class="ctlnk-arr">↗</span>
+          </a>
+          <a class="ctlnk" href="https://github.com/ayushverma-in" target="_blank" rel="noopener" target="_blank">
+            <div class="ctlnk-l">
+              <div class="ctlnk-ico ico-v" style="font-size:15px;">🐙</div>
+              <div>
+                <div class="ctlnk-lbl">GitHub</div>
+                <div class="ctlnk-val">ayushverma-in</div>
+              </div>
+            </div><span class="ctlnk-arr">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="ct-right anim d2">
+        <div>
+          <div class="avail-card">
+            <div class="avail-dot"></div>
+            <div>
+              <div class="avail-t">Available for Opportunities</div>
+              <div class="avail-s">Open to internships & remote projects</div>
+            </div>
+          </div>
+          <div class="fact-list">
+            <div class="fact"><span class="fact-l">💻 Focus</span><span class="fact-v">Python & Data Analytics</span>
+            </div>
+            <div class="fact"><span class="fact-l">⚡ Response</span><span class="fact-v">Within 24 hours</span></div>
+            <div class="fact"><span class="fact-l">🌐 Mode</span><span class="fact-v">Remote / On-site</span></div>
+            <div class="fact"><span class="fact-l">🗣️ Languages</span><span class="fact-v">Hindi · English</span></div>
+          </div>
+        </div>
+        <a class="big-cta" href="mailto:ayushverma16161@gmail.com" target="_blank">✦ Send Me a Message ✦</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="f-logo">AYUSH.</div>
+    <div class="f-copy">© 2026 Ayush Verma · Made with 💜</div>
+    <div class="f-links">
+      <a href="#about">About</a><a href="#projects">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    function swE(idx, btn) {
+      document.querySelectorAll('.etab').forEach(function (t) { t.classList.remove('active'); });
+      document.querySelectorAll('.exp-panel').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('ep-' + idx).classList.add('active');
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.anim').forEach(function (el) { obs.observe(el); });
+  </script>
+
+  <!-- Three.js CDN -->
+
+  <script>
+    ;
+  </script>
+
+
+  <!-- CERT VIEWER MODAL -->
+  <div class="cv-overlay" id="cv-overlay" onclick="closeCertOutside(event)">
+    <div class="cv-box">
+      <div class="cv-head">
+        <div class="cv-title" id="cv-title">Certificate</div>
+        <button class="cv-close" onclick="closeCert()">✕</button>
+      </div>
+      <div class="cv-body">
+        <iframe id="cv-frame" src="" title="Certificate"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPLASH -->
+  <div id="splash">
+    <div class="sp-blob b1"></div>
+    <div class="sp-blob b2"></div>
+    <div class="sp-blob b3"></div>
+    <div class="sp-content">
+      <div class="sp-name">AYUSH <span>VERMA</span></div>
+      <div class="sp-line"></div>
+      <div class="sp-label">PORTFOLIO</div>
+      <div class="sp-tag">Developer &amp; Aspiring Data Analyst</div>
+    </div>
+    <div class="sp-dots">
+      <div class="sp-d"></div>
+      <div class="sp-d"></div>
+      <div class="sp-d"></div>
+    </div>
+  </div>
+
+  <!-- MUSIC WIDGET -->
+  <div id="music-widget" onclick="toggleMusic()" title="Play / Pause">
+    <div class="mw-bars">
+      <div class="mwb"></div>
+      <div class="mwb"></div>
+      <div class="mwb"></div>
+      <div class="mwb"></div>
+      <div class="mwb"></div>
+    </div>
+    <div class="mw-icon" id="mw-icon">▶</div>
+  </div>
+
+  <!-- THEME BTN -->
+  <button id="theme-btn" onclick="toggleTheme()" title="Toggle Theme">🌙</button>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bg-music" loop>
+    <source src="the_mountain-piano-piano-music-490009.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="threejs-bg.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
