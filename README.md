@@ -2,8 +2,7 @@
 
 A modern and interactive personal portfolio website showcasing my projects, skills, and certifications.
 
-🌐 **Live Demo:** https://ayushverma-site.netlify.app
-
+🌐 **Live Demo:** [View Portfolio](https://ayushverma-site.netlify.app)
 ---
 
 ## 🚀 Features
@@ -38,11 +37,15 @@ A modern and interactive personal portfolio website showcasing my projects, skil
 ---
 
 ## 📸 Preview
+## Desktop View
 <img width="1894" height="1197" alt="image" src="https://github.com/user-attachments/assets/a18908c6-3cfd-456a-a396-84fed618c8ea" />
 <img width="1889" height="1193" alt="image" src="https://github.com/user-attachments/assets/95a5fcd9-5d14-4ef7-b1f5-0822f9e2ef7d" />
 <img width="1895" height="1196" alt="image" src="https://github.com/user-attachments/assets/b541f482-7df8-47f7-9d2f-1f70d1cf0305" />
 
-
+## 📌 Highlights
+- Built and deployed live portfolio independently
+- Integrated Three.js for interactive UI
+- Showcased certifications and projects dynamically
 
 ---
 
@@ -54,4 +57,5 @@ A modern and interactive personal portfolio website showcasing my projects, skil
 ---
 
 ## ⭐ About Me
-I am a student and aspiring developer passionate about building real-world projects using Python and technologies. Currently focused on data analytics and problem-solving.
+I am a student and aspiring developer passionate about building real-world projects using Python and modern technologies. Currently focused on data analytics and problem-solving.
+Focused on continuous learning and building impactful real-world solutions.
